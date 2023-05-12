@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:padding="16dp"
+    android:id="@+id/clSongRoot"
+    android:background="@color/colorPrimary">
+
+    <ImageView
+        android:id="@+id/ivSongArtwork"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:src="@drawable/ic_album_disk"
+        android:scaleType="centerCrop"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintStart_toEndOf="@id/ivSongArtwork"
+        app:layout_constraintEnd_toStartOf="@id/ivMoreMenu"
+        app:layout_constraintTop_toTopOf="@id/ivSongArtwork"
+        app:layout_constraintBottom_toBottomOf="@id/ivSongArtwork"
+        android:layout_marginStart="12dp"
+        android:layout_marginEnd="5dp">
+    
+        <TextView
+            android:id="@+id/tvSongTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Song Name"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_medium"/>
+
+        <TextView
+            android:id="@+id/tvArtistName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Artist Name"
+            android:textSize="12sp"
+            android:textColor="@color/white_alpha_70"
+            android:singleLine="true"
+            android:ellipsize="end"
+            android:fontFamily="@font/inter_regular"/>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/ivMoreMenu"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:src="@drawable/ic_more"
+        app:tint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+    
+</androidx.constraintlayout.widget.ConstraintLayout>

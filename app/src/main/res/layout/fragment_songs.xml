@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".ui.home.SongsFragment"
+    android:background="@color/colorPrimary">
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvAllSongs"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        app:fastScrollEnabled="true"
+        app:fastScrollVerticalThumbDrawable="@drawable/fast_scroller_thumb_drawable"
+        app:fastScrollVerticalTrackDrawable="@drawable/fast_scroller_line_drawable"
+        app:fastScrollHorizontalThumbDrawable="@drawable/fast_scroller_thumb_drawable"
+        app:fastScrollHorizontalTrackDrawable="@drawable/fast_scroller_line_drawable"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="10dp"
+        tools:listitem="@layout/item_song_layout"/>
+
+    <TextView
+        android:id="@+id/tvNoSongsText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/no_songs_available"
+        android:textColor="@color/white_alpha_70"
+        android:textSize="15sp"
+        android:fontFamily="@font/inter_regular"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:visibility="gone"
+        tools:visibility="visible"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

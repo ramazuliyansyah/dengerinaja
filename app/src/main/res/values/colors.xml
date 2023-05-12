@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#121212</color>
+    <color name="colorDark">#121212</color>
+    <color name="colorAccent">#DC143C</color>
+    <color name="colorAccentDark">#800019</color>
+    <color name="color_accent_on_container">#A5354C</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="colorDarkDim">#232323</color>
+    <color name="black_alpha_50">#80000000</color>
+    <color name="black_alpha_85">#d80a0a0a</color>
+    <color name="white_alpha_90">#E6FFFFFF</color>
+    <color name="white_alpha_85">#D9FFFFFF</color>
+    <color name="white_alpha_80">#CCFFFFFF</color>
+    <color name="white_alpha_75">#BFFFFFFF</color>
+    <color name="white_alpha_70">#B3FFFFFF</color>
+    <color name="white_alpha_60">#99FFFFFF</color>
+    <color name="white_alpha_50">#80FFFFFF</color>
+    <color name="white_alpha_25">#40FFFFFF</color>
+    <color name="white_alpha_15">#26FFFFFF</color>
+    <color name="bottom_gradient">#e6000000</color>
+    <color name="notification_vibrant">#41514B</color>
+    <color name="seek_bar_background">#ababab</color>
+    <color name="swipe_red_bg">#E44D4D</color>
+</resources>
