@@ -1,1 +1,1 @@
-Ya gitu isinya cuma aplikasi musik doan, ga lebih hehe
+Ya gitu isinya cuma aplikasi musik doang, ga lebih hehe
